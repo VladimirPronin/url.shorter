@@ -14,6 +14,11 @@ public class UrlShorterApplication {
 		SpringApplication.run(UrlShorterApplication.class, args);
 	}
 
+	/**
+	 * https://spring.io/guides/gs/accessing-data-jpa/
+	 * i saw this in example
+	 * we can run specific pieces of code when an application is fully started   https://dzone.com/articles/spring-boot-applicationrunner-and-commandlinerunne
+	 */
 	@Bean
 	public CommandLineRunner demo(UrlRepository repository) {
 		return (args) -> {

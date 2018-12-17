@@ -37,7 +37,7 @@ public class UrlService {
      */
     public String addShortUrlAuto(String originalUrl) {
         while (true) {
-            String shortUrl = RandomString.make(4);
+            String shortUrl = RandomString.make(4); //I've found this method in IJ
             UrlEntity firstByShortUrl = urlRepository.findFirstByShortUrl(shortUrl);
             if(firstByShortUrl == null){
                 UrlEntity newEntity = new UrlEntity();
